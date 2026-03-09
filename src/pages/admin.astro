@@ -1,0 +1,12 @@
+---
+import Layout from '../layouts/Layout.astro';
+import AdminWrapper from '../components/pages/AdminWrapper';
+---
+
+<Layout title="Admin Dashboard">
+  <div class="min-h-screen bg-[#050505] text-[var(--text-primary)] font-body selection:bg-primary/30">
+    <main>
+      <AdminWrapper client:only="react" />
+    </main>
+  </div>
+</Layout>

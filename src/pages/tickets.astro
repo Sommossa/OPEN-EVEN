@@ -1,0 +1,8 @@
+---
+import Layout from '../layouts/Layout.astro';
+import TicketsWrapper from '../components/pages/TicketsWrapper';
+---
+
+<Layout title="Tickets">
+  <TicketsWrapper client:only="react" />
+</Layout>

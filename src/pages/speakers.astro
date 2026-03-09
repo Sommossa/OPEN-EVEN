@@ -1,0 +1,8 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SpeakersWrapper from '../components/pages/SpeakersWrapper';
+---
+
+<Layout title="Speakers | OPEN EVEN" description="Learn from industry leaders, open source maintainers, and community experts shaping the future of technology.">
+    <SpeakersWrapper client:only="react" />
+</Layout>

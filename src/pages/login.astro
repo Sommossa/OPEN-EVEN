@@ -1,0 +1,8 @@
+---
+import Layout from '../layouts/Layout.astro';
+import LoginWrapper from '../components/pages/LoginWrapper';
+---
+
+<Layout title="Login">
+  <LoginWrapper client:only="react" />
+</Layout>

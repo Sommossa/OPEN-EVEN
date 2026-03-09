@@ -1,0 +1,8 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HomeWrapper from '../components/pages/HomeWrapper';
+---
+
+<Layout title="Home">
+  <HomeWrapper client:only="react" />
+</Layout>

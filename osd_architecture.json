@@ -1,0 +1,45 @@
+{
+    "description": "Master Architecture & Schema Specification for OPEN EVEN 2026",
+    "firestore_schema": {
+        "sections": "Users, Tickets, Ticket Categories, Coupons, Orders, Speakers, Schedule, Tasks, Notifications, VolunteerMessages, ActivityFeed, EventConfig, CheckInLogs"
+    },
+    "rbac": {
+        "roles": [
+            "attendee",
+            "volunteer",
+            "manager",
+            "admin"
+        ]
+    },
+    "pages": {
+        "public": [
+            "/",
+            "/tickets",
+            "/schedule",
+            "/speakers",
+            "/about",
+            "/login",
+            "/register"
+        ],
+        "authenticated": [
+            "/profile"
+        ],
+        "volunteer": [
+            "/volunteer/dashboard"
+        ],
+        "manager": [
+            "/manager/dashboard"
+        ],
+        "admin": [
+            "/admin/dashboard"
+        ]
+    },
+    "implementation_phases": [
+        "Phase 1: Foundation (Week 1)",
+        "Phase 2: Public Pages + Ticketing (Week 2)",
+        "Phase 3: RBAC + Volunteer System (Week 3)",
+        "Phase 4: Manager Dashboard (Week 4)",
+        "Phase 5: Admin Panel + Notifications (Week 5)",
+        "Phase 6: Polish + PWA (Week 6)"
+    ]
+}

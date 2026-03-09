@@ -1,0 +1,8 @@
+---
+import Layout from '../layouts/Layout.astro';
+import RegisterWrapper from '../components/pages/RegisterWrapper';
+---
+
+<Layout title="Register">
+  <RegisterWrapper client:only="react" />
+</Layout>

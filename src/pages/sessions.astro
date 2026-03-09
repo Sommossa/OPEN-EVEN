@@ -1,0 +1,8 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SessionsWrapper from '../components/pages/SessionsWrapper';
+---
+
+<Layout title="Sessions | OPEN EVEN" description="Explore the lineup of keynotes, workshops, and talks at OPEN EVEN 2026.">
+    <SessionsWrapper client:only="react" />
+</Layout>
